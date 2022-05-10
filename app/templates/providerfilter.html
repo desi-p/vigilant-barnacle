@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Provider Search</title>
+{% endblock %}
+
+{% block body %}
+<section class="content">
+    <h1 style="text-align: center">Providers</h1>
+
+    <table>
+        <tr>
+            <th>Provider First Name</th>
+            <th> Provider Last Name</th>
+        </tr>
+        {% for provider in providers %}
+            <tr>
+                <td>{{ provider.first_name }}</td>
+                <td>{{ provider.last_name }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</section>
+{% endblock %}
