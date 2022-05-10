@@ -3,6 +3,7 @@
 ### Set Up App
 
 Once app is cloned from Github and virtual environment activated:
+
     1. Install requirements (*pip install -r requirements.txt*)
     2. Start Docker on desktop
     3. Run Docker containers for pgadmin and postgres from terminal: (*docker compose up -d*)
