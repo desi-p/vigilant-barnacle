@@ -25,7 +25,7 @@ def main():
 @app.route('/')
 def index():
     return render_template('index.html')
- .
+    
 @app.route('/providers', methods=['GET'])
 def getProviders():
     get_provider = s.query(Provider.first_name, Provider.last_name, Provider.rating).order_by(Provider.rating.desc()).all()
